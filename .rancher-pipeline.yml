@@ -10,7 +10,6 @@ stages:
       dockerfilePath: ./Dockerfile
       buildContext: .
       tag: haoger/rpd:v1
-      pushRemote: true
       registry: 192.168.167.5:5000
 - name: deploy
   steps:
