@@ -1,4 +1,4 @@
-FROM openjdk:18-slim-buster
+FROM openjdk
 
 MAINTAINER leewhh@foxmail.com
 ADD target/rancher-pipelines-demo-0.0.1-SNAPSHOT.jar /app.jar
