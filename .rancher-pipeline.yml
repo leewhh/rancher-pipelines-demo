@@ -2,7 +2,7 @@ stages:
 - name: compile
   steps:
   - runScriptConfig:
-      image: 192.168.167.5:5000/haoger/maven_aliyun:v1
+      image: 192.168.167.5:5000/haoger/maven:v1
       shellScript: mvn clean package
 - name: publish
   steps:
@@ -10,7 +10,6 @@ stages:
       dockerfilePath: ./Dockerfile
       buildContext: .
       tag: haoger/rpd:v1
-      pushRemote: true
       registry: 192.168.167.5:5000
 - name: deploy
   steps:
