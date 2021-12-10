@@ -2,7 +2,7 @@ stages:
 - name: compile
   steps:
   - runScriptConfig:
-      image: maven:3.8.4-amazoncorretto-8
+      image: 192.168.167.5:5000/haoger/maven_aliyun:v1
       shellScript: mvn clean package
 - name: publish
   steps:
